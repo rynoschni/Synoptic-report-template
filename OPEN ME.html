@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+<head>
+<script src="jquery-3.6.0.js"></script>
+<script src='capCommons.js'></script>
+<script src='capMelanoma4302.js'></script>
+</head>
+<body>
+<h3>CAP cancer synoptic report: (Melanoma of the skin: excision, re-excision; version 4.3.0.2)</h3>
+
+<fieldset><legend id='s0' title='SPECIMEN'>SPECIMEN</legend>
+	<p id='s1' title='Procedure'>Procedure (select all that apply)</p>
+		<input type="checkbox" name="s1" value="Excision">Excision<br>
+		<input type="checkbox" name="s1" value="Re-excision">Re-excision<br>
+		<input type="checkbox" name="s1" value="Sentinel node(s) biopsy">Sentinel node(s) biopsy<br>
+		<input type="checkbox" name="s1" id='s1_4' value="Lymphadenectomy, regional nodes:">Lymphadenectomy, regional nodes (specify): 
+			<input id='s1_4_1'><br>
+		<input type="checkbox" name="s1" id='s1_5' value="Other:">Other (specify): 
+			<input id='s1_5_1'><br>
+		<input type="checkbox" name="s1" value="Not specified">Not specified<br>
+	<p id='s2' title='Specimen Laterality'>Specimen Laterality</p>
+		<input type="radio" name='s2' value='Right'>Right<br>
+		<input type="radio" name='s2' value='Left'>Left<br>
+		<input type="radio" name='s2' value='Midline'>Midline<br>
+		<input type="radio" name='s2' value='Not specified'>Not specified<br>
+
+</fieldset>
+<fieldset><legend id='t0' title='TUMOR'>TUMOR</legend>
+	<p id='t1' title='Tumor Site'>Tumor Site</p>
+		<input type="radio" name='t1' id='t1_1' value='Skin, NOS'>Skin, NOS:
+			<input id='t1_1_1'><br>
+		<input type="radio" name='t1' id='t1_2' value='Skin of lip:'>Skin of lip:
+			<input id='t1_2_1'><br>
+		<input type="radio" name='t1' id='t1_3' value='External ear:'>External ear:
+			<input id='t1_3_1'><br>
+		<input type="radio" name='t1' id='t1_4' value='Skin of other and unspecified parts of face:'>Skin of other and unspecified parts of face:
+			<input id='t1_4_1'><br>
+		<input type="radio" name='t1' id='t1_5' value='Skin of scalp and neck:'>Skin of scalp and neck:
+			<input id='t1_5_1'><br>
+		<input type="radio" name='t1' id='t1_6' value='Skin of trunk:'>Skin of trunk:
+			<input id='t1_6_1'><br>
+		<input type="radio" name='t1' id='t1_7' value='Skin of upper limb and shoulder:'>Skin of upper limb and shoulder:
+			<input id='t1_7_1'><br>
+		<input type="radio" name='t1' id='t1_8' value='Skin of lower limb and hip:'>Skin of lower limb and hip:
+			<input id='t1_8_1'><br>
+		<input type="radio" name='t1' id='t1_9' value='overlapping lesion of skin:'>Overlapping lesion of skin (specify sites):
+			<input id='t1_9_1'><br>
+		<input type="radio" name='t1' id='t1_10' value='Penis:'>Penis:
+			<input id='t1_10_1'><br>
+			<blockquote>
+				<input type='checkbox' name='t1_10' value='Prepuce'>Prepuce<br>
+				<input type='checkbox' name='t1_10' value='Glans penis'>Glans penis<br>
+				<input type='checkbox' name='t1_10' value='Body of penis'>Body of penis<br>
+				<input type='checkbox' name='t1_10' value='Penis, NOS'>Penis,NOS<br>
+			</blockquote>
+		<input type="radio" name='t1' id='t1_11' value='Scrotum:'>Scrotum:
+			<input id='t1_11_1'><br>
+		<input type="radio" name='t1' id='t1_12' value='Vulva:'>Vulva:
+			<input id='t1_12_1'><br>
+			<blockquote>
+				<input type='checkbox' name='t1_12' value='Labium majus'>Labium majus<br>
+				<input type='checkbox' name='t1_12' value='Labium minus'>Labium minus<br>
+				<input type='checkbox' name='t1_12' value='Clitoris'>Clitoris<br>
+				<input type='checkbox' name='t1_12' value='Vulva, NOS'>Vulva,NOS<br>
+			</blockquote>
+		<input type="radio" name='t1' value='Not specified'>Not specified<br>
+	<p id='t2' title='Multiple Primary Sites'>Multiple Primary Sites</p>
+		<input type="radio" name='t2' value='Not applicable'>Not applicable (no additional primary sites present)<br>
+		<input type="radio" name='t2' id='t2_2' value='Present:'>Present:
+			<input id='t2_2_1'><br>
+	<p id='t3' title='Invasiveness'>Invasiveness</p>
+		<input type='radio' name='t3' value='Invasive melanoma' checked=true>Invasive melanoma
+	<p id='t4' title='Histologic Type'>Histologic Type</p>
+		<input type='radio' name='t4' value='No residual melanoma identified'>No residual melanoma identified<br>
+		<input type='radio' name='t4' value='Superficial spreading melanoma'>Superficial spreading melanoma (low-cumulative sun damage (CSD) melanoma)<br>
+		<input type='radio' name='t4' value='Lentigo maligna melanoma'>Lentigo maligna melanoma<br>
+		<input type='radio' name='t4' id='t4_4' value='Desmoplastic melanoma'>Desmoplastic melanoma<br>
+			<blockquote>
+				<input type='radio' name='t4_4' value='Pure desmoplastic melanoma'>Pure desmoplastic melanoma<br>
+				<input type='radio' name='t4_4' value='Mixed desmoplastic melanoma'>Mixed desmoplastic melanoma<br>
+			</blockquote>
+		<input type='radio' name='t4' value='Acral melanoma'>Acral melanoma<br>
+		<input type='radio' name='t4' value='Melanoma arising in a blue nevus'>Melanoma arising in a blue nevus (blue nevus-like melanoma)<br>
+		<input type='radio' name='t4' value='Melanoma arising in a giant congenital nevus'>Melanoma arising in a giant congenital nevus<br>
+		<input type='radio' name='t4' value='Spitz melanoma'>Spitz melanoma (malignant Spitz tumor)<br>
+		<input type='radio' name='t4' value='Nodular melanoma'>Nodular melanoma<br>
+		<input type='radio' name='t4' value='Nevoid melanoma'>Nevoid melanoma<br>
+		<input type='radio' name='t4' value='Melanoma, not otherwise classified'>Melanoma, not otherwise classified<br>
+		<input type='radio' name='t4' id='t4_12' value='Other histologic type not listed'>Other histologic type not listed (specify):
+			<input id='t4_12_1'><br>
+	<p id='t5' title='Maximum Tumor (Breslow) Thickness in Millimeters'>Maximum Tumor (Breslow) Thickness in Millimeters (mm)</p>
+		<input type='radio' name='t5' id='t5_1' value='Specify in Millimeters:'>Specify in Millimeters (mm):
+			<input id='t5_1_1'><br>
+		<input type='radio' name='t5' id='t5_2' value='At least in Millimeters:'>At least in Millimeters (mm):
+			<input id='t5_2_1'><label>Explain:</label><input id='t5_2_2' title='Explain'><br>
+		<input type='radio' name='t5' id='t5_3' value='Cannot be determined:'>Cannot be determined (explain):
+			<input id='t5_3_1'><br>
+	<p id='t6' title='Macroscopic Satellite Nodule(s)'>Macroscopic Satellite Nodule(s)</p>
+		<input type='radio' name='t6' value='Not identified'>Not identified<br>
+		<input type='radio' name='t6' value='Present'>Present<br>
+		<input type='radio' name='t6' id='t6_3' value='Cannot be determined:'>Cannot be determined (explain):
+			<input id='t6_3_1'><br>
+	<p id='t7' title='Ulceration'>Ulceration</p>
+		<input type='radio' name='t7' value='Not identified'>Not identified<br>
+		<input type='radio' name='t7' value='Present'>Present<br>
+		<input type='radio' name='t7' value='Cannot be determined'>Cannot be determined
+	<p id='t8' title='Mitotic Rate'>Mitotic Rate</p>
+		<input type='radio' name='t8' id='t8_1' value='None identified:'>None identified:
+			<input id='t8_1_1'><br>
+		<input type='radio' name='t8' id='t8_2' value='Specify number of mitoses per square Millimeter:'>Specify number of mitoses per square Millimeter (mm):
+			<input id='t8_2_1'><br>
+		<input type='radio' name='t8' value='Cannot be determined'>Cannot be determined
+	<p id='t9' title='Microsatellite(s)'>Microsatellite(s)</p>
+		<input type='radio' name='t9' value='Not identified'>Not identified<br>
+		<input type='radio' name='t9' value='Present'>Present<br>
+		<input type='radio' name='t9' id='t9_3' value='Cannot be determined'>Cannot be determined:
+			<input id='t9_3_1'>
+	<p id='t10' title='Lymphovascular Invasion'>Lymphovascular Invasion</p>
+		<input type='radio' name='t10' value='Not identified'>Not identified<br>
+		<input type='radio' name='t10' value='Present'>Present<br>
+		<input type='radio' name='t10' id='t10_3' value='Cannot be determined'>Cannot be determined:
+			<input id='t10_3_1'><br>
+	<p id='t11' title='Neurotropism'>Neurotropism</p>
+		<input type='radio' name='t11' value='Not identified'>Not identified<br>
+		<input type='radio' name='t11' value='Present'>Present<br>
+		<input type='radio' name='t11' id='t11_3' value='Cannot be determined'>Cannot be determined:
+			<input id='t11_3_1'><br>
+
+</fieldset>
+<fieldset><legend id='m0' title='MARGINS'>MARGINS</legend>
+	<p id='m1' title='Margin status for invasive melanoma'>Margin status for invasive melanoma</p>
+		<input type='radio' name='m1' id='m1_1' value='All margins negative for invasive melanoma'>All margins negative for invasive melanoma<br>
+		<input type='radio' name='m1' id='m1_2' value='Invasive melanoma present at margin'>Invasive melanoma present at margin<br>
+		<input type='radio' name='m1' id='m1_3' value='Other:'>Other (specify):
+			<input id='m1_3_1'><br>
+		<input type='radio' name='m1' id='m1_4' value='Cannot be determined:'>Cannot be determined (explain):
+			<input id='m1_4_1'><br>
+	<p id='m2' title='Margin Status for Melanoma in situ'>Margin Status for Melanoma in situ</p>
+		<input type='radio' name='m2' id='m2_1' value='Not applicable'>Not applicable (in situ disease is absent and margins are uninvolved by invasive melanoma)<br>
+		<input type='radio' name='m2' id='m2_2' value='All margins negative for melanoma in situ'>All margins negative for melanoma in situ<br>
+		<input type='radio' name='m2' id='m2_3' value='Melanoma in situ present at margin'>Melanoma in situ present at margin<br>
+		<input type='radio' name='m2' id='m2_4' value='Other:'>Other (specify):
+			<input id='m2_4_1'><br>
+		<input type='radio' name='m2' id='m2_5' value='Cannot be determined:'>Cannot be determined (explain):
+			<input id='m2_5_1'><br>
+</fieldset>
+<fieldset><legend id='n0' title='REGIONAL LYMPH NODES'>REGIONAL LYMPH NODES</legend>
+	<p id='n1' title='Regional Lymph Node Status'>Regional Lymph Node Status</p>
+		<input type='radio' name='n1' id='n1_1' value='Not applicable'>Not applicable (no regional lymph nodes submitted or found)<br>
+		<input type='radio' name='n1' id='n1_2' value='Regional lymph nodes present'>Regional lymph nodes present<br>
+		<script>$("#n1_2").click(function(){$("#nh1").show()})</script>		    
+			<blockquote hidden id='nh1'>
+				<input type='radio' name='n1_2' id='n1_2_1' value='All regional lymph nodes negative for tumor'>All regional lymph nodes negative for tumor<br>
+				<input type='radio' name='n1_2' id='n1_2_2' value='Tumor present in regional lymph node(s)'>Tumor present in regional lymph node(s)<br>
+				<script>$("#n1_2_2").click(function(){$("#nh2").show()})</script>
+				<blockquote hidden id='nh2'>
+					<p id='n2' title='Total Number of Lymph Nodes with Tumor'>Total Number of Lymph Nodes with Tumor</p>
+						<input type='radio' name='n2' id='n2_1' value='Exact number:'>Exact number (specify):
+							<input id='n2_1_1'><br>
+						<input type='radio' name='n2' id='n2_2' value='At least:'>At least (specify):
+							<input id='n2_2_1'><br>
+						<input type='radio' name='n2' id='n2_3' value='Other:'>Other (specify):
+							<input id='n2_3_1'><br>
+						<input type='radio' name='n2' id='n2_4' value='Cannot be determined:'>Cannot be determined (explain):
+							<input id='n2_4_1'><br>
+					<p id='n3' title='Number of Sentinel Lymph Nodes with Tumor'>Number of Sentinel Lymph Nodes with Tumor</p>
+						<input type='radio' name='n3' id='n3_1' value='Not applicable'>Not applicable (no sentinel lymph nodes examined)<br>
+						<input type='radio' name='n3' id='n3_2' value='Exact number:'>Exact number (specify):
+							<input id='n3_2_1'><br>
+						<input type='radio' name='n3' id='n3_3' value='At least:'>At least (specify):
+							<input id='n3_3_1'><br>
+						<input type='radio' name='n3' id='n3_4' value='Other:'>Other (specify):
+							<input id='n3_4_1'><br>
+						<input type='radio' name='n3' id='n3_5' value='Cannot be determined:'>Cannot be determined (explain):
+							<input id='n3_5_1'><br>
+					<p id='n4' title='Size of Largest Nodal Metastatic Deposit'>Size of Largest Nodal Metastatic Deposit</p>
+						<input type='radio' name='n4' id='n4_1' value='Exact size:'>Exact size:
+							<input id='n4_1_1'><br>
+						<input type='radio' name='n4' id='n4_2' value='At least:'>At least:
+							<input id='n4_2_1'><br>
+						<input type='radio' name='n4' id='n4_3' value='Greater than:'>Greater than:
+							<input id='n4_3_1'><br>
+						<input type='radio' name='n4' id='n4_4' value='Less than:'>Less than:
+							<input id='n4_4_1'><br>
+						<input type='radio' name='n4' id='n4_5' value='Other:'>Other (specify):
+							<input id='n4_5_1'><br>
+						<input type='radio' name='n4' id='n4_6' value='Cannot be determined:'>Cannot be determined (explain):
+							<input id='n4_6_1'><br>
+					<p id='n5' title='Extranodal Extension'>Extranodal Extension</p>
+						<input type='radio' name='n5' value='Not identified'>Not identified<br>
+						<input type='radio' name='n5' value='Present'>Present<br>
+						<input type='radio' name='n5' id='n5_3' value='Cannot be determined:'>Cannot be determined:
+							<input id='n5_3_1'><br>
+					<p id='n6' title='Matted Nodes'>Matted Nodes</p>
+						<input type='radio' name='n6' value='Not identified'>Not identified<br>
+						<input type='radio' name='n6' value='Present'>Present<br>
+						<input type='radio' name='n6' id='n6_3' value='Other:'>Other (specify):
+							<input id='n6_3_1'><br>
+						<input type='radio' name='n6' id='n6_4' value='Cannot be determined:'>Cannot be determined (explain):
+							<input id='n6_4_1'><br>
+				</blockquote>
+				<input type='radio' name='n1_2' id='n1_2_3' value='Other:'>Other (specify):
+					<input id='n1_2_3_1'><br>
+				<input type='radio' name='n1_2' id='n1_2_4' value='Cannot be determined:'>Cannot be determined (explain):
+					<input id='n1_2_4_1'><br>
+				<p id='n7' title='Total Number of Lymph Nodes Examined'>Total Number of Lymph Nodes Examined (sentinel and non-sentinel)</p>
+					<input type='radio' name='n7' id='n7_1' value='Exact number:'>Exact number (specify):
+						<input id='n7_1_1'><br>
+					<input type='radio' name='n7' id='n7_2' value='At least:'>At least (specify):
+						<input id='n7_2_1'><br>
+					<input type='radio' name='n7' id='n7_3' value='Other:'>Other (specify):
+						<input id='n7_3_1'><br>
+					<input type='radio' name='n7' id='n7_4' value='Cannot be determined:'>Cannot be determined (explain):
+						<input id='n7_4_1'><br>
+				<p id='n8' title='Number of Sentinel Nodes Examined'>Number of Sentinel Nodes Examined</p>
+					<input type='radio' name='n8' id='n8_1' value='Exact number:'>Exact number (specify):
+						<input id='n8_1_1'><br>
+					<input type='radio' name='n8' id='n8_2' value='At least:'>At least (specify):
+						<input id='n8_2_1'><br>
+					<input type='radio' name='n8' id='n8_3' value='Other:'>Other (specify):
+						<input id='n8_3_1'><br>
+					<input type='radio' name='n8' id='n8_4' value='Cannot be determined:'>Cannot be determined (explain):
+						<input id='n8_4_1'><br>
+
+			</blockquote>
+</fieldset>
+<fieldset><legend id='dm0' title='DISTANT METASTASIS'>DISTANT METASTASIS</legend>
+	<p id='dm1' title='Distant Site(s) Involved'>Distant Site(s) Involved, if applicable (select all that apply)</p>
+		<input type='checkbox' name='dm1' value='Not applicable'>Not applicable<br>
+		<input type='checkbox' name='dm1' id='dm1_2' value='Skin, subcutaneous tissues, soft tissues including muscle and / or nonregional lymph nodes:'>Skin, subcutaneous tissues, soft tissues including muscle and / or nonregional lymph nodes:
+			<input id='dm1_2_1'><br>
+		<input type='checkbox' name='dm1' id='dm1_3' value='Lung:'>Lung:
+			<input id='dm1_3_1'><br>
+		<input type='checkbox' name='dm1' id='dm1_4' value='Liver:'>Liver:
+			<input id='dm1_4_1'><br>
+		<input type='checkbox' name='dm1' id='dm1_5' value='Other non-CNS sites:'>Other non-CNS sites:
+			<input id='dm1_5_1'><br>
+		<input type='checkbox' name='dm1' id='dm1_6' value='CNS sites:'>CNS sites:
+			<input id='dm1_6_1'><br>
+		<input type='checkbox' name='dm1' id='dm1_7' value='Other:'>Other (specify):
+			<input id='dm1_7_1'><br>
+		<input type='checkbox' name='dm1' id='dm1_8' value='Cannot be determined:'>Cannot be determined:
+			<input id='dm1_8_1'><br>
+</fieldset>
+<fieldset><legend id='p0' title='PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition)'>PATHOLOGIC STAGE CLASSIFICATION (pTNM, AJCC 8th Edition)</legend>
+	<input type='checkbox' title='' name='p0_1' id='p0_1' value='Classification assigned in this report includes information from a prior procedure:'>Classification assigned in this report includes information from a prior procedure (explain):
+		<input id='p0_1_1'><br>
+	<p id='p1' title='TNM Descriptors'>TNM Descriptors (select all that apply)</p>
+		<input type='checkbox' name='p1' id='p1_1' value='Not applicable:'>Not applicable:
+			<input id='p1_1_1'><br>
+		<input type='checkbox' name='p1' value='m (multiple)'>m (multiple)<br>
+		<input type='checkbox' name='p1' value='r (recurrence or retreatment)'>r (recurrence or retreatment)<br>
+		<input type='checkbox' name='p1' value='y (posttherapy or post neoadjuvant therapy)'>y (posttherapy or post neoadjuvant therapy)<br>
+	<p id='p2' title='pT Category'>pT Category</p>
+		<input type='radio' name='p2' value='pT not assigned (cannot be determined based on available pathological information)'>pT not assigned (cannot be determined based on available pathological information)<br>
+		<input type='radio' name='p2' value='pT0: No evidence of primary tumor (e.g., unknown primary or completely regressed melanoma)'>pT0: No evidence of primary tumor (e.g., unknown primary or completely regressed melanoma)<br>
+		<input type='radio' name='p2' value='pT1a: Melanoma less than 0.8 mm in thickness, no ulceration'>pT1a: Melanoma less than 0.8 mm in thickness, no ulceration<br>
+		<input type='radio' name='p2' value='pT1b: Melanoma less than 0.8 mm in thickness with ulceration; or Melanoma 0.8 to 1.0 mm in thickness with or without ulceration'>pT1b: Melanoma less than 0.8 mm in thickness with ulceration; or Melanoma 0.8 to 1.0 mm in thickness with or without ulceration<br>
+		<input type='radio' name='p2' value='pT1 (subcategory cannot be determined)'>pT1 (subcategory cannot be determined)<br>
+		<input type='radio' name='p2' value='pT2a: Melanoma greater than 1.0 to 2.0 mm in thickness, no ulceration'>pT2a: Melanoma greater than 1.0 to 2.0 mm in thickness, no ulceration<br>
+		<input type='radio' name='p2' value='pT2b: Melanoma greater than 1.0 to 2.0 mm in thickness, with ulceration'>pT2b: Melanoma greater than 1.0 to 2.0 mm in thickness, with ulceration<br>
+		<input type='radio' name='p2' value='pT2 (subcategory cannot be determined)'>pT2 (subcategory cannot be determined)<br>
+		<input type='radio' name='p2' value='pT3a: Melanoma greater than 2.0 to 4.0 mm in thickness, no ulceration'>pT3a: Melanoma greater than 2.0 to 4.0 mm in thickness, no ulceration<br>
+		<input type='radio' name='p2' value='pT3b: Melanoma greater than 2.0 to 4.0 mm in thickness, with ulceration'>pT3b: Melanoma greater than 2.0 to 4.0 mm in thickness, with ulceration<br>
+		<input type='radio' name='p2' value='pT3 (subcategory cannot be determined)'>pT3 (subcategory cannot be determined)<br>
+		<input type='radio' name='p2' value='pT4a: Melanoma greater than 4.0 mm in thickness, no ulceration'>pT4a: Melanoma greater than 4.0 mm in thickness, no ulceration<br>
+		<input type='radio' name='p2' value='pT4b: Melanoma greater than 4.0 mm in thickness, with ulceration'>pT4b: Melanoma greater than 4.0 mm in thickness, with ulceration<br>
+		<input type='radio' name='p2' value='pT4 (subcategory cannot be determined)'>pT4 (subcategory cannot be determined)<br>
+	<p id='p3' title='pN Category'>pN Category</p>
+		<input type='radio' name='p3' value='pN not assigned (no nodes submitted or found)'>pN not assigned (no nodes submitted or found)<br>
+		<input type='radio' name='p3' value='pN not assigned (cannot be determined based on available pathological information)'>pN not assigned (cannot be determined based on available pathological information)<br>
+		<input type='radio' name='p3' value='pN0: No regional lymph node metastasis detected'>pN0: No regional lymph node metastasis detected<br>
+		<input type='radio' name='p3' value='pN1a: One clinically occult tumor-involved node (i.e., detected by sentinel node biopsy) with no in-transit, satellite and / or microsatellite metastases'>pN1a: One clinically occult tumor-involved node (i.e., detected by sentinel node biopsy) with no in-transit, satellite and / or microsatellite metastases<br>
+		<input type='radio' name='p3' value='pN1b: One clinically detected tumor-involved node with no in-transit, satellite and / or microsatellite metastases'>pN1b: One clinically detected tumor-involved node with no in-transit, satellite and / or microsatellite metastases<br>
+		<input type='radio' name='p3' value='pN1c: Presence of in-transit, satellite and / or microsatellite metastases with no regional lymph node disease'>pN1c: Presence of in-transit, satellite and / or microsatellite metastases with no regional lymph node disease<br>
+		<input type='radio' name='p3' value='pN1 (subcategory cannot be determined)'>pN1 (subcategory cannot be determined)<br>
+		<input type='radio' name='p3' value='pN2a: Two to three clinically occult tumor-involved node (i.e., detected by sentinel node biopsy) with no in-transit, satellite and / or microsatellite metastases'>pN2a: Two to three clinically occult tumor-involved node (i.e., detected by sentinel node biopsy) with no in-transit, satellite and / or microsatellite metastases<br>
+		<input type='radio' name='p3' value='pN2b: Two to three tumor-involved nodes at least one of which was clinically detected with no in-transit, satellite and / or microsatellite metastases'>pN2b: Two to three tumor-involved nodes at least one of which was clinically detected with no in-transit, satellite and / or microsatellite metastases<br>
+		<input type='radio' name='p3' value='pN2c: One clinically occult or clinically detected tumor-involved node with presence of in-transit, satellite and / or microsatellite'>pN2c: One clinically occult or clinically detected tumor-involved node with presence of in-transit, satellite and / or microsatellite<br>
+		<input type='radio' name='p3' value='pN2 (subcategory cannot be determined)'>pN2 (subcategory cannot be determined)<br>
+		<input type='radio' name='p3' value='pN3a: Four or more clinically occult tumor-involved nodes (i.e., detected by sentinel node biopsy) with no in-transit, satellite and / or microsatellite metastases'>pN3a: Four or more clinically occult tumor-involved nodes (i.e., detected by sentinel node biopsy) with no in-transit, satellite and / or microsatellite metastases<br>
+		<input type='radio' name='p3' value='pN3b: Four or more tumor-involved nodes, at least one of which was clinically detected, with no in-transit, satellite and / or microsatellite metastases'>pN3b: Four or more tumor-involved nodes, at least one of which was clinically detected, with no in-transit, satellite and / or microsatellite metastases<br>
+		<input type='radio' name='p3' value='pN3c: Two or more clinically occult or clinically detected tumor-involved nodes with in-transit, satellite and / or microsatellite metastases and / or any number of matted nodes with in-transit, satellite and / or microsatellite metastases'>pN3c: Two or more clinically occult or clinically detected tumor-involved nodes with in-transit, satellite and / or microsatellite metastases and / or any number of matted nodes with in-transit, satellite and / or microsatellite metastases<br>
+		<input type='radio' name='p3' value='pN3 (subcategory cannot be determined)'>pN3 (subcategory cannot be determined)<br>
+	<p id='p4' title='pM Category'>pM Category</p>
+		<input type='radio' name='p4' value='Not applicable - pM cannot be determined from the submitted specimen(s)'>Not applicable - pM cannot be determined from the submitted specimen(s)<br>
+		<input type='radio' name='p4' value='pM1a: Distant metastasis in skin, subcutaneous tissues, soft tissues including muscle and / or nonregional lymph nodes'>pM1a: Distant metastasis in skin, subcutaneous tissues, soft tissues including muscle and / or nonregional lymph nodes<br>
+		<input type='radio' name='p4' value='pM1b: Distant metastasis to lung with or without M1a sites of disease'>pM1b: Distant metastasis to lung with or without M1a sites of disease<br>
+		<input type='radio' name='p4' value='pM1c: Distant metastasis to non-CNS visceral sites with or without M1a or M1b sites of disease'>pM1c: Distant metastasis to non-CNS visceral sites with or without M1a or M1b sites of disease<br>
+		<input type='radio' name='p4' value='pM1d: Distant metastasis to CNS with or without M1a, M1b or M1c sites of disease'>pM1d: Distant metastasis to CNS with or without M1a, M1b or M1c sites of disease<br>
+		<input type='radio' name='p4' value='pM1 (subcategory cannot be determined)'>pM1 (subcategory cannot be determined)<br>
+</fieldset>
+
+<button><h2>Click me to generate report</h2></button>
+
+<pre id='report'></pre>
+</body>
+</html>
